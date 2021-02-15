@@ -1,0 +1,265 @@
+/* Containers */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.flexContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  min-height: auto;
+  margin: 0;
+}
+
+.flexSquare {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  height: 100%;
+}
+
+.gridContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+/* Innerpage Container */
+
+.pageContainer {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1rem;
+}
+
+.pageContainer > *:first-child {
+  grid-row: 1 / span 4;
+}
+
+#about .pageContainer > *:first-child {
+  grid-row: 1 / span 3;
+}
+
+/* Card */
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Margin & Padding */
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.px-1 {
+  padding: 0 1.5rem;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.px-3 {
+  padding: 0 3rem;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+/* Categories */
+
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.category-general {
+  background-color: $primary-color;
+}
+
+.category-playstation {
+  background-color: $playstation-color;
+}
+
+.category-xbox {
+  background-color: $xbox-color;
+}
+
+.category-nintendo {
+  background-color: $nintendo-color;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: $primary-color;
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+}
+
+.btn-light {
+  background-color: $light-color;
+}
+
+.btn-dark {
+  background-color: $dark-color;
+}
+
+.btn-playstation {
+  background-color: $playstation-color;
+}
+
+.btn-xbox {
+  background-color: $xbox-color;
+}
+
+.btn-nintendo {
+  background-color: $nintendo-color;
+}
+
+/* Backgrounds */
+
+.bg-dark {
+  background-color: $dark-color;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: $light-color;
+  color: #333;
+}
+
+.bg-primary {
+  background-color: $primary-color;
+  color: #fff;
+}
+
+.bg-secondary {
+  background-color: $secondary-color;
+  color: #fff;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-dark a,
+.bg-dark a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a,
+.bg-secondary a,
+.bg-secondary a {
+  color: #fff;
+}
+
+.bg-light h1,
+.bg-light h2,
+.bg-light h3,
+.bg-light a,
+.bg-light a,
+.bg-light a {
+  color: #333;
+}
+
+/* Text / Links */
+
+.lrg-heading {
+  font-size: 2.5rem;
+}
+
+.article-links {
+  font-size: 1rem;
+  text-decoration: underline;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.primaryText {
+  color: $primary-color;
+}
+
+.secondaryText {
+  color: $secondary-color;
+}
+
+.darkText {
+  color: $dark-color;
+}
+
+.lightText {
+  color: $light-color;
+}
+
+/* Misc */
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
