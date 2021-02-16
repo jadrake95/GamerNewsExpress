@@ -19,9 +19,11 @@
       ></a>
     </div>
     <ul>
-      <li><a href="/" class="current">Home</a></li>
-      <li><a href="/about" class="">About</a></li>
-      <li><a href="/contact" class="">Contact</a></li>
+      <li><a href="/" <% if (title === "home"){ %> class="current" <% } %> >Home</a></li>
+      <li><a href="/browseArticles" <% if (title === "browseArticles"){ %> class="current" <% } %> >Articles</a></li>
+      <li><a href="/about" <% if (title === "about"){ %> class="current" <% } %> >About</a></li>
+      <li><a href="/contact" <% if (title === "contact"){ %> class="current" <% } %> >Contact</a></li>
     </ul>
   </div>
 </nav>
+

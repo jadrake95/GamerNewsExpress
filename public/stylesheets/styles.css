@@ -258,6 +258,10 @@ h6 {
   font-size: 2.5rem;
 }
 
+.md-heading {
+  font-size: 1.5rem;
+}
+
 .article-links {
   font-size: 1rem;
   text-decoration: underline;
@@ -525,6 +529,74 @@ aside {
   margin-top: 0.5rem;
 }
 
+/* Browsing Articles */
+#browseArticles .browsingContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 5fr 2fr;
+  grid-template-rows: repeat(10, auto);
+  margin: 2rem 0;
+  grid-gap: 1rem;
+}
+
+#browseArticles .card {
+  display: flex;
+}
+
+#browseArticles .browsing-card {
+  display: flex;
+  flex-direction: row;
+  transition-property: opacity, transform;
+  transition: 0.3s ease-in-out;
+}
+
+#browseArticles .browsing-card > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#browseArticles .browsing-card > div:first-of-type {
+  max-width: 50%;
+}
+
+#browseArticles .browsing-card > div:first-of-type > div {
+  width: 25%;
+  text-align: center;
+}
+
+#browseArticles .browsing-card > div:last-of-type {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#browseArticles .browsing-card > div img {
+  height: 150px;
+  width: 250px;
+}
+
+#browseArticles .browsing-card:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transform: scale(0.99);
+}
+
+#browseArticles aside {
+  justify-content: space-evenly;
+}
+
+#browseArticles aside:first-of-type {
+  grid-row: 1/2;
+}
+
+#browseArticles aside:nth-of-type(2) {
+  grid-row: 2 / 4;
+}
+
+#browseArticles aside:last-of-type {
+  grid-row: 5 / 7;
+}
+
 /* Categories Aside */
 #categories {
   flex-direction: column;
@@ -540,7 +612,7 @@ aside {
   width: 100%;
 }
 
-#categories ul li:hover {
+#categories ul li a:hover {
   color: #ee6c4d;
   cursor: pointer;
 }
@@ -553,7 +625,7 @@ aside {
   align-items: center;
   margin: 1rem auto;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   font-family: "Lato", sans-serif;
 }
 

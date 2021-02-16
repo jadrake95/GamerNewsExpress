@@ -13,19 +13,35 @@ app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-  res.render("index");
+  const title = "home";
+  res.render("index", { title });
 });
 
 app.get("/article/:category", (req, res) => {
   const { category } = req.params;
-  console.log(category);
-  res.render("article", { category });
+  const title = "article";
+  res.render("article", { category, title });
 });
 
 app.get("/article", (req, res) => {
   const { category } = req.params;
-  console.log(category);
-  res.render("article", { category });
+  const title = "article";
+  res.render("article", { category, title });
+});
+
+app.get("/contact", (req, res) => {
+  const title = "contact";
+  res.render("contact", { title });
+});
+
+app.get("/about", (req, res) => {
+  const title = "about";
+  res.render("about", { title });
+});
+
+app.get("/browseArticles", (req, res) => {
+  const title = "browseArticles";
+  res.render("browseArticles", { title });
 });
 
 const port = 3000;

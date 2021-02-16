@@ -1,0 +1,40 @@
+<% layout("layouts/boilerplate") %>
+
+<!-- Contact Form -->
+
+<section id="contactForm">
+  <div class="contactContainer">
+    <h2>Get In <span class="primaryText">Contact</span></h2>
+    <form action="#">
+      <div class="formGroup">
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          name="firstName"
+          placeholder="Enter your first name..."
+        />
+      </div>
+      <div class="formGroup">
+        <label for="LastName">Last Name</label>
+        <input
+          type="text"
+          name="lastName"
+          placeholder="Enter your last name..."
+        />
+      </div>
+      <div class="formGroup">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter your email..." />
+      </div>
+      <div class="formGroup">
+        <label for="enquiry">Enquiries</label>
+        <textarea
+          type="text"
+          name="enquiry"
+          placeholder="Comments & Enquiries..."
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</section>

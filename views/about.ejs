@@ -1,29 +1,12 @@
 <% layout("layouts/boilerplate") %>
 
-<section id="article">
+<!-- About -->
+
+<section id="about">
   <div class="gridContainer">
     <div class="pageContainer">
       <article class="card">
-        <% if (category === "Nintendo") { %>
-        <img src="/Images/nintendo1.jpg " alt="" />
-        <% } else if (category === "Playstation") { %>
-        <img src="/Images/playstation1.jpg " alt="" />
-        <% } else if (category === "Xbox") { %>
-        <img src="/Images/controller1.jpg " alt="" />
-        <% } else if (category === "General") { %>
-        <img src="/Images/comp1.jpg " alt="" />
-        <% } else { %>
-        <img src="/Images/arcade1.jpg " alt="" />
-        <% } %>
-        <h2 class="lrg-heading">Exciting <%= category %> Article</h2>
-        <div class="meta">
-          <small>
-            <i class="fas fa-user"></i> Written By Jack Drake. February 01, 2021
-          </small>
-          <div class="category category-<%= category.toLowerCase(); %>">
-            <%= category %>
-          </div>
-        </div>
+        <h2 class="lrg-heading">About Our Organization</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus,
           est quo adipisci blanditiis nemo, excepturi sed ducimus nam dolorum
@@ -55,31 +38,6 @@
         </p>
       </article>
 
-      <aside id="categories" class="card">
-        <h3 id="categoryTitle">Categories</h3>
-        <ul class="list">
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            <a href="/browseArticles"> General </a>
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            <a href="/browseArticles"> Nintendo </a>
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            <a href="/browseArticles"> Playstation </a>
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            <a href="/browseArticles"> Xbox </a>
-          </li>
-          <li>
-            <i class="fas fa-chevron-right"></i>
-            <a href="/browseArticles"> Nintendo </a>
-          </li>
-        </ul>
-      </aside>
       <aside class="card bg-primary">
         <h3>Join Our Community</h3>
         <p>
@@ -89,13 +47,24 @@
         <a href="#" class="btn btn-dark btn-block">Join Now</a>
       </aside>
 
+      <aside class="card bg-dark">
+        <h3>Advertisement One</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          illum.
+        </p>
+        <a href="#"
+          ><img src="/Images/arcade1.jpg" alt="arcade" class="advert"
+        /></a>
+      </aside>
+
       <aside class="card bg-secondary">
         <h3>Popular Article Link</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
           illum.
         </p>
-        <a href="General" class="article-links">Read More..</a>
+        <a href="/article/General" class="article-links">Read More..</a>
       </aside>
     </div>
   </div>
