@@ -44,7 +44,7 @@ app.get("/browseArticles", (req, res) => {
   res.render("browseArticles", { title });
 });
 
-const port = 3000;
+const port = process.env.PORT || 80;
 app.listen(port, () => {
   console.log(`listening on ${port}`);
 });
