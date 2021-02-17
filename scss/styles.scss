@@ -394,4 +394,21 @@
   }
 }
 
+#notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 70vh;
+  margin: 0 auto;
+  padding: 1rem;
+  > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 @import "mobile";

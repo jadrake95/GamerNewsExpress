@@ -53,9 +53,15 @@ app.get("/browseArticles/:category", (req, res) => {
     general: "/Images/comp1.jpg",
   };
   const imagePath = `${images[category]}`;
-  console.log(imagePath);
   const title = "categoryArticles";
   res.render("categoryArticles", { category, title, imagePath });
+});
+
+app.use((req, res) => {
+  res.status(404);
+  const title = null;
+
+  res.render("notFound", { title });
 });
 
 const port = process.env.PORT || 80;
