@@ -44,6 +44,20 @@ app.get("/browseArticles", (req, res) => {
   res.render("browseArticles", { title });
 });
 
+app.get("/browseArticles/:category", (req, res) => {
+  const { category } = req.params;
+  const images = {
+    playstation: "/Images/playstation1.jpg",
+    xbox: "/Images/controller1.jpg",
+    nintendo: "/Images/nintendo1.jpg",
+    general: "/Images/comp1.jpg",
+  };
+  const imagePath = `${images[category]}`;
+  console.log(imagePath);
+  const title = "categoryArticles";
+  res.render("categoryArticles", { category, title, imagePath });
+});
+
 const port = process.env.PORT || 80;
 app.listen(port, () => {
   console.log(`listening on ${port}`);
