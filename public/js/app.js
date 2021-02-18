@@ -21,18 +21,18 @@ linkedCards.forEach((card) => {
 
 flexSquares.forEach((square) => {
   if (square.classList.contains("cat-general")) {
-    var category = "General";
+    var category = "general";
   } else if (square.classList.contains("cat-playstation")) {
-    var category = "Playstation";
+    var category = "playstation";
   } else if (square.classList.contains("cat-xbox")) {
-    var category = "Xbox";
+    var category = "xbox";
   } else if (square.classList.contains("cat-nintendo")) {
-    var category = "Nintendo";
+    var category = "nintendo";
   } else {
-    var category = "General";
+    var category = "general";
   }
   square.addEventListener("click", function () {
-    window.location = `/article/${category}`;
+    window.location = `/browseArticles/${category}`;
   });
 });
 
